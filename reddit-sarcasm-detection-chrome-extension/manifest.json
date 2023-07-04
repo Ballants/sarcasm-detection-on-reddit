@@ -1,0 +1,28 @@
+{
+  "short_name": "Sarcasm on Reddit",
+  "name": "Sarcasm detection on Reddit comment Chrome extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icon-sarcasm-16x16.png",
+    "32": "icon-sarcasm-32x32.png",
+    "128": "icon-sarcasm-128x128.png"
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["https://www.reddit.com/*"],
+      "css": ["root.css"],
+      "js": ["sarcasm-content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["root.css"],
+      "matches": ["https://www.reddit.com/*"]
+    }
+  ]
+}
