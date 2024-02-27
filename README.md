@@ -1,6 +1,8 @@
 # Sarcasm detection on Reddit with PySpark
 
 Final project for the **Big Data Computing** course held by prof. Gabriele Tolomei at **La Sapienza University of Rome** in A.Y. 2022/2023.
+
+## Introduction
 In this project, we addressed a binary classification problem to detect sarcasm in Reddit comments with _Machine Learning_ and _Big Data_ tools.
 
 We chose 3 feature engineering methods and 4 classification models and compared them to find out which combination performs better:
